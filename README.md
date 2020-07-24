@@ -1,14 +1,4 @@
-# Zig Learn OpenGL
-
-[Learn OpenGL](learnopengl.com) tutorials ported to the zig programming language. This repo follows
-the chronological order of the website, separating out the same functionality into separate files.
-The repository is intended to serve as a demonstration of how to use OpenGL with zig, both in user
-code, and with the zig build system.
-
-Currently the "Getting Started" and "Lighting" sections have been ported in full, and I've also
-ported the ibl specular implementation in the PBR section for a bit of eyecandy.
-
-![Containers screenshot](textures/ibl_screenshot.png)
+# Zig OpenGL Playground
 
 ## Dependencies
 
@@ -30,8 +20,6 @@ zig build camera            # Renders a scene with many boxes and a camera
 zig build multiple_lights   # Renders the same scene but with diffuse/specular maps and multiple lights
 ```
 
-## Stability
+## Note
 
-My intention is to keep this repo up to date with the language. This has been tested and works with:
-
-- `0.5.0+d972d1c94`
+The playground start as a folk of [Learn OpenGL zig port by Charles Shenton](https://github.com/cshenton/learnopengl)
