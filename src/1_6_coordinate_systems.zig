@@ -224,7 +224,7 @@ pub fn main() !void {
         var i: usize = 0;
         while (i < 10) : (i += 1) {
             // calculate the model matrix for each object and pass it to shader before drawing
-            const model = translation(cubePositions[i]);
+            var model = translation(cubePositions[i]);
             const angle = 20.0 * @intToFloat(f32, i);
             model = model.matmul(rotation(angle / 180.0 * pi, vec3(1.0, 0.3, 0.5)));
             ourShader.setMat4("model", model);

@@ -9,7 +9,7 @@ const tan = std.math.tan;
 const max = std.math.max;
 const min = std.math.min;
 
-pub fn clamp(v: var, lo: var, hi: var) @TypeOf(v) {
+pub fn clamp(v: anytype, lo: anytype, hi: anytype) @TypeOf(v) {
     return max(min(v, hi), lo);
 }
 

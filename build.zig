@@ -45,11 +45,8 @@ const Target = struct {
                 exe.linkSystemLibrary("shell32");
                 exe.linkSystemLibrary("gdi32");
 
-                exe.addIncludeDir("C:\\Users\\charlie\\src\\github.com\\Microsoft\\vcpkg\\installed\\x64-windows-static\\include");
-                exe.addLibPath("C:\\Users\\charlie\\src\\github.com\\Microsoft\\vcpkg\\installed\\x64-windows-static\\lib");
-
-                // exe.addIncludeDir("C:\\Users\\charlie\\src\\github.com\\Microsoft\\vcpkg\\installed\\x64-windows\\include");
-                exe.addLibPath("C:\\Users\\charlie\\src\\github.com\\Microsoft\\vcpkg\\installed\\x64-windows\\lib");
+                exe.addIncludeDir("D:\\dev\\vcpkg\\installed\\x64-windows-static\\include");
+                exe.addLibPath("D:\\dev\\vcpkg\\installed\\x64-windows-static\\lib");
             },
             else => {},
         }
